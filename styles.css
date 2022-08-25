@@ -3,12 +3,13 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Roboto, sans-serif;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background: white;
   color: black;
+  box-sizing: border-box;
 }
 
 header {
@@ -43,7 +44,7 @@ a, p {
     background: #1f2937;
     color: #f9faf8;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .hero div {
@@ -57,7 +58,7 @@ a, p {
     background-color: grey;
     border: 1px solid lightblue;
     text-align: center;
-    height: 200px;
+    min-height: 200px;
     font-size: .9em;
 }
 
@@ -80,4 +81,52 @@ button {
     text-align: center;
     border-radius: 8px;
     border: none;
+}
+
+.info {
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+.info h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.info-content {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 16px;
+    margin: 20px;
+    color: #1f2937;
+}
+
+.info-pic {
+    aspect-ratio: 1 / 1;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.quote {
+    padding: 80px;
+    background-color: #e5e7eb;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-author {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
 }
